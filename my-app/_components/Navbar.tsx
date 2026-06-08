@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
@@ -5,33 +7,33 @@ export default function Navbar() {
         <h1 className="text-white text-xl font-bold">Portfolio</h1>
 
         <div className="flex items-center gap-8 text-white font-medium">
-          <a
-            href="#home"
+          <Link
+            href={"/"}
             className="transition-all duration-300 hover:text-blue-400"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#projects"
+          <Link
+            href="project"
             className="transition-all duration-300 hover:text-blue-400"
           >
             Projects
-          </a>
+          </Link>
 
-          <a
-            href="#services"
+          <Link
+            href="services"
             className="transition-all duration-300 hover:text-blue-400"
           >
             Services
-          </a>
+          </Link>
 
-          <a
-            href="#contact"
+          <Link
+            href="contact"
             className="transition-all duration-300 hover:text-blue-400"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
