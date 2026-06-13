@@ -5,7 +5,7 @@ import {
   MessageCircle,
   Clock3,
 } from "lucide-react";
-
+import ContactForm from "./_components/form";
 
 export default function Contact() {
   return (
@@ -18,7 +18,7 @@ export default function Contact() {
           className="text-center max-w-3xl mx-auto space-y-4"
           id="contact-header"
         >
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white font-display">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-display">
             Let's Build the Future
           </h2>
 
@@ -46,63 +46,57 @@ export default function Contact() {
 
             <div className="my-8 h-px bg-white/80 " />
 
-            {/* <div className="flex gap-4">
-              <Mail className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
-              <div>
-                <h4 className="font-semibold text-white">Earendel123@gmail.com</h4>
-                <p className="text-sm text-[#c2c6d6]">
-                  Primary communication for project discussions.
-                </p>
-              </div>
-            </div> */}
-
             <div className="space-y-5">
-  <div className="flex gap-4">
-    <Mail className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
-    <div>
-      <h4 className="font-semibold text-white">Email</h4>
-      <p className="text-sm text-[#c2c6d6]">
-        Primary communication for project discussions.
-      </p>
-    </div>
-  </div>
+              <div className="flex gap-4">
+                <Mail className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-white">Email</h4>
+                  <p className="text-sm text-[#c2c6d6]">
+                    Primary communication for project discussions.
+                  </p>
+                </div>
+              </div>
 
-  <div className="flex gap-4">
-    <BriefcaseBusiness className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
-    <div>
-      <h4 className="font-semibold text-white">LinkedIn</h4>
-      <p className="text-sm text-[#c2c6d6]">
-        Strategic collaborations, networking, and partnership opportunities.
-      </p>
-    </div>
-  </div>
+              <div className="flex gap-4">
+                <BriefcaseBusiness className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-white">LinkedIn</h4>
+                  <p className="text-sm text-[#c2c6d6]">
+                    Strategic collaborations, networking, and partnership
+                    opportunities.
+                  </p>
+                </div>
+              </div>
 
-  <div className="flex gap-4">
-    <Building className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
-    <div>
-      <h4 className="font-semibold text-white">Github Organization</h4>
-      <p className="text-sm text-[#c2c6d6]">
-        Corporate inquiries, enterprise engagements, and company relations.
-      </p>
-    </div>
-  </div>
+              <div className="flex gap-4">
+                <Building className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-white">
+                    Github Organization
+                  </h4>
+                  <p className="text-sm text-[#c2c6d6]">
+                    Corporate inquiries, enterprise engagements, and company
+                    relations.
+                  </p>
+                </div>
+              </div>
 
-  <div className="flex gap-4">
-    <MessageCircle className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
-    <div>
-      <h4 className="font-semibold text-white">WhatsApp</h4>
-      <p className="text-sm text-[#c2c6d6]">
-        Quick consultations and urgent inquiries.
-      </p>
-    </div>
-  </div>
-</div>
-
+              <div className="flex gap-4">
+                <MessageCircle className="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-white">WhatsApp</h4>
+                  <p className="text-sm text-[#c2c6d6]">
+                    Quick consultations and urgent inquiries.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="border border-white rounded-3xl min-h-[550px] p-8  text-white">
-            Consultation Form Placeholder
-          </div>
+          <ContactForm/>
+
+          
+
         </section>
 
         <section id="faq">
